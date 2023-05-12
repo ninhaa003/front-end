@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chaset="UTF-8"
+        <meta http-equiv="X-UA-compatible" content="IE=edge"
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>document</title>   
+        <style>
+            |*{
+                padding:0;
+                margin:0;
+            }
+        #main{display: grid;
+        grid-template-areas:"header header" "nav nav" "content aside" "footer footer";
+        grid-template-rows:15vh 10vh 55vh 10vh;
+            
+            }
+
+            .maindheder{grid-area:header; background:red}
+            .maindheder{grid-area:nav; backgroud:rgb(0,68,255);}
+            .maindheder{grid-area:content; background:rgb(255,0,200);}
+            .maindheder{grid-area:aside; background:rbg(255,0,0);}
+            .mainfooter{grid-area:footer; background:blue ;}
+            @meda screen an (maxwidth:768px) {
+                body{background:#cdcdcd}
+                #main{
+                    grid-template-areas:"header" "content" "aside" "footer"
+                }
+                .mainnav{
+                    grid-area:head;margin-top:20px;
+                }
+         </style>
+           </head>
+           <body>
+              <main id=""main">
+                <header class="maindheder">header</header>"
+                <nav class="mainnav">nav</nav>
+                <article class="maincontent">content</article>
+                <aside class="mainaside">aside</aside>
+                <footer class="mainfooter">footer</footer>
+                </main>
+                </body>
+                </html>
+
+           
+            
