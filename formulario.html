@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <form action="">
+       <fieldset>
+           <legend>Tela de Login</legend>
+       <label for="usuario">Usuário</label>
+       <br>
+       <input type="text" name="usuario" id="usuario">
+       <br>
+       <label for="senha">Senha</label>
+       <br>
+       <input type="password" name="senha" id="senha">
+       <br>
+       <button type="submit" onclick="validarSenha();">Entrar</button>
+   </fieldset>
+   </form>
+   <!-- Aqui começa meu javascript-->
+   <script>
+       function validarSenha(){
+           let bdusuario = 'pedro2';
+           let bdsenha   = '123mudar';
+           let frmusario = document.getElementById('usuario').value;
+           let frmsenha  = document.getElementById('senha').value;
+
+
+           if(frmusario ==bdusuario && frmsenha==bdsenha){
+               alert('Acesso concedido com sucesso!');
+           }else{
+               alert('Usuário não autorizado');
+           }
+       }
+   </script>
+</body>
+
+
+</html>
